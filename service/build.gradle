@@ -1,8 +1,10 @@
+// Required for Spock Testing
 apply plugin: 'groovy'
 
 dependencies {
+    // for Spring e.g. @Service Annotation
     compile("org.springframework.boot:spring-boot-starter:1.4.2.RELEASE")
 
-    // Dependency for Spock Testing
+    // for Spock Testing
     compile("org.spockframework:spock-spring:1.0-groovy-2.4")
 }
