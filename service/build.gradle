@@ -1,3 +1,8 @@
+apply plugin: 'groovy'
+
 dependencies {
     compile("org.springframework.boot:spring-boot-starter:1.4.2.RELEASE")
+
+    // Dependency for Spock Testing
+    compile("org.spockframework:spock-spring:1.0-groovy-2.4")
 }

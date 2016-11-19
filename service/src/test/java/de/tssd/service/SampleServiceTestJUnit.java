@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SampleServiceImpl.class)
-public class SampleServiceTest {
+public class SampleServiceTestJUnit {
 
     @Autowired
     private SampleService sampleService;
