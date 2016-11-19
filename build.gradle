@@ -9,7 +9,7 @@ allprojects {
     }
 
     dependencies {
-        testCompile("org.springframework.boot:spring-boot-starter-test:1.4.1.RELEASE")
+        testCompile("org.springframework.boot:spring-boot-starter-test:1.4.2.RELEASE")
     }
 
     task wrapper(type: Wrapper) {
