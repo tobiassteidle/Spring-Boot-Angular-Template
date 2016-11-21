@@ -4,7 +4,7 @@ const jasmineBrowser = require('gulp-jasmine-browser');
 const watch = require('gulp-watch');
 
 gulp.task('default', function() {
-    gulp.src('src/test/javascript/**/*.js')
+    return gulp.src('src/test/javascript/**/*.js')
         .pipe(jasmine())
 });
 
