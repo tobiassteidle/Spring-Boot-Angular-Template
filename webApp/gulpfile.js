@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const jasmine = require('gulp-jasmine');
-const jasmineBrowser = require('gulp-jasmine-browser');
+const jasmine_live = require('gulp-jasmine-livereload-task');
 const watch = require('gulp-watch');
 
 gulp.task('default', function() {
@@ -8,11 +8,6 @@ gulp.task('default', function() {
         .pipe(jasmine())
 });
 
-gulp.task('jasmine', function() {
-    var filesForTest = ['src/test/javascript/**/*.js'];
-    var filesToWatch = ['src/main/resources/**/*.js', 'src/test/javascript/**/*.js'];
-    return gulp.src(filesForTest)
-        .pipe(watch(filesToWatch))
-        .pipe(jasmineBrowser.specRunner())
-        .pipe(jasmineBrowser.server({port: 8888}));
-});
+gulp.task('jasmine', jasmine_live({
+    files: ['src/main/resources/**/*.js', 'src/test/javascript/**/*.js']
+}));
