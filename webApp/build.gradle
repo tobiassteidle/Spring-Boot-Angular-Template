@@ -1,13 +1,20 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
+
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+        classpath("com.moowork.gradle:gradle-gulp-plugin:0.13")
+        classpath("com.moowork.gradle:gradle-node-plugin:0.13")
     }
 }
 
 apply plugin: 'org.springframework.boot'
+apply plugin: 'com.moowork.gulp'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
@@ -18,3 +25,6 @@ dependencies {
     // see https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3 for further details
     compile("org.springframework.boot:spring-boot-devtools")
 }
+
+build.dependsOn gulp_default
+

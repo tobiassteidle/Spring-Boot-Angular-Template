@@ -1,0 +1,25 @@
+{
+  "name": "spring-boot-angular-template",
+  "version": "1.0.0",
+  "description": "Gradle Multi-Project Template for Spring Boot Applications (AngularJS Frontend)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiassteidle/Spring-Boot-Angular-Template.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/tobiassteidle/Spring-Boot-Angular-Template/issues"
+  },
+  "homepage": "https://github.com/tobiassteidle/Spring-Boot-Angular-Template#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine-browser": "^1.7.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11"
+  }
+}
