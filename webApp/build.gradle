@@ -26,5 +26,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-devtools")
 }
 
+compileJava.dependsOn npmInstall
+
 build.dependsOn gulp_default
 
